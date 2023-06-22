@@ -1,0 +1,33 @@
+.g-container {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 450px;
+  width: 400px;
+}
+
+.womanArt {
+  position: absolute;
+  left: -25px;
+  top: 80px;
+  width: 105%;
+  z-index: 1;
+}
+
+@media (max-width: 375px) {
+  .g-container {
+    width: 800px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .womanArt {
+    left: 32%;
+    width: 35%;
+    top: 40px;
+    z-index: 1;
+  }
+}
